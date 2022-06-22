@@ -34,7 +34,7 @@ class MemoListResource(Resource) :
             query = '''insert into memo
                         (title, date, content, user_id)
                         values
-                        (%s , %s, %s, %s);;'''
+                        (%s , %s, %s, %s);'''
             
             record = (data['title'], data['date'], data['content'],  user_id  )
 
